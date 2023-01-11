@@ -2,8 +2,7 @@ import string
 import sys
 import random
 from .iban import *
-from .version import *
-from robot.api.deco import keyword
+from .version import VERSION
 
 class BankAccountNumber:
     """

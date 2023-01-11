@@ -1,9 +1,10 @@
-from setuptools import setup
-from BankAccountNumber.version import VERSION
+from setuptools import find_packages, setup
+from src.BankAccountNumber.version import VERSION
 
 setup(
     name = 'robotframework-dutchbankaccountnumber',
-    packages = ['BankAccountNumber'],
+    package_dir  = {'': 'src'},
+    packages = find_packages('src'),
     version = VERSION,
     description = 'Dutch Bank Account Generator',
     long_description = "Robot Framework Library for generating pre and post IBAN period bank account numbers. The Account Numbers pass the mod 11 and mod 97 checks.",
