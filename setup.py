@@ -1,5 +1,5 @@
-from setuptools import setup, find_packages
-from version import VERSION
+from setuptools import setup
+from BankAccountNumber.version import VERSION
 
 setup(
     name = 'robotframework-dutchbankaccountnumber',
@@ -15,15 +15,11 @@ setup(
     platforms    = 'any',
     download_url = 'https://github.com/kootstra/robotframework-dutchbankaccountnumber/tarball/' + VERSION,
     classifiers = [
-                        "License :: OSI Approved :: MIT License",
-                        "Operating System :: OS Independent",
-                        "Programming Language :: Python",
-                        "Topic :: Software Development :: Testing",
-                        "Development Status :: 4 - Beta"
-                  ],
-    install_requires=[
-        "string",
-        "sys",
-        "random"
-    ]
+            "License :: OSI Approved :: MIT License",
+            "Operating System :: OS Independent",
+            "Programming Language :: Python :: 3",
+            "Framework :: Robot Framework :: Library",
+            "Topic :: Software Development :: Testing",
+            "Development Status :: 4 - Beta"
+    ],
 )
