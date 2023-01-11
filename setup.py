@@ -7,6 +7,7 @@ setup(
     packages = find_packages('src'),
     version = VERSION,
     description = 'Dutch Bank Account Generator',
+    long_description_content_type = 'text/x-rst',
     long_description = "Robot Framework Library for generating pre and post IBAN period bank account numbers. The Account Numbers pass the mod 11 and mod 97 checks.",
     author = 'Anne Kootstra', 
     author_email = 'kootstra@hotmail.com',
