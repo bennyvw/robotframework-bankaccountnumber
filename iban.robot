@@ -1,6 +1,5 @@
 *** Settings ***
 Library    BankAccountNumber
-Library    Collections
 
 *** Test Cases ***
 Generate Bank Account Number
@@ -23,7 +22,7 @@ Generate IBAN Account Number for German Bank
     ${iban}=      Generate IBAN Account Number    DE    37040044
     Log To Console    \n${iban}
 
-Generate IBAN Account Number ING Bank and create IBAN for it
+Generate Bank Account Number and create ING Bank IBAN for it
     ${number}=    Generate NL Bank Account Number
     ${iban}=      Generate IBAN Account Number    NL    INGB    ${number}
     Log To Console    \n${iban}
@@ -41,5 +40,6 @@ Log List To Console
     [Arguments]    ${list}
     ${count}=    Get Length    ${list}
     Log To Console    \nList length is ${count} and it contains the following items:
-    :FOR    ${index}    IN RANGE    0    ${count}
-    \    Log To Console    ${index}: @{list}[${index}]
+    FOR    ${index}    IN RANGE    0    ${count}
+        Log To Console    ${index}: ${list}[${index}]
+    END
