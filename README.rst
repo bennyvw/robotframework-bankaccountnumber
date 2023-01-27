@@ -1,11 +1,13 @@
-Robot Framework Library for generating pre and post IBAN period bank account numbers
-==================================
+Robot Framework Library for generating IBAN bank account numbers
+================================================================
 
 Introduction
 ------------
 
-Robot Framework Library for generating pre and post IBAN period bank account numbers. 
+Robot Framework Library for generating (mainly Dutch) IBAN bank account numbers. 
 The Account Numbers pass the mod 11 and mod 97 checks.
+It is possible to generate international IBANs, in that case the bankcode and 
+accountNumber have to be specified as arguments.
 
 Features
 --------
@@ -23,12 +25,12 @@ Installation
 
 Steps
 ^^^^^^^^^^^^^^
-Use PIP::
+Using PIP::
 
-    pip install robotframework-dutchbankaccountnumber
+    pip install robotframework-bankaccountnumber
 
 
-Clone the project repository from GitHub. After that you can install
+Without PIP. Clone the project repository from GitHub. After that you can install
 the library with::
 
     python setup.py install
@@ -60,7 +62,7 @@ Below is an example Robot Framework suite file.
             Log To Console    \n${iban}
 
         Generate IBAN Account Number for German Bank
-            ${iban}=      Generate IBAN Account Number    DE    37040044
+            ${iban}=      Generate IBAN Account Number    DE    37040044    0517012104
             Log To Console    \n${iban}
 
         Generate Bank Account Number and create ING Bank IBAN for it

@@ -26,7 +26,7 @@ class BankAccountNumber:
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
     ROBOT_LIBRARY_VERSION = VERSION
 
-    NL_BANK_CODES = ['ABNA', 'ASNB', 'INGB', 'KNAB', 'FVLB', 'RABO', 'TRIO']
+    NL_BANK_CODES = ['ABNA', 'ASNB', 'INGB', 'KNAB', 'FVLB', 'RABO', 'TRIO', 'BUNQ', 'RBRB', 'AEGO', 'ASNB']
 
     def generate_NL_Bank_Account_Number(self, total=1):
         """

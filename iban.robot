@@ -19,7 +19,7 @@ Generate IBAN Account Number using an existing Account Number
     Log To Console    \n${iban}
 
 Generate IBAN Account Number for German Bank
-    ${iban}=      Generate IBAN Account Number    DE    37040044
+    ${iban}=      Generate IBAN Account Number    DE    37040044    0517012104
     Log To Console    \n${iban}
 
 Generate Bank Account Number and create ING Bank IBAN for it
