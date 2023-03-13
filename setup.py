@@ -14,11 +14,10 @@ setup(
     author_email = 'kootstra@hotmail.com',
     maintainer = 'Benny van Wijngaarden',
     maintainer_email = 'benny@smaragd-it.nl',
-    url = 'https://github.com/bennyvw/robotframework-dutchbankaccountnumber',
+    url = 'https://github.com/bennyvw/robotframework-bankaccountnumber',
     keywords = ['robotframework', 'iban', 'bankaccount'],
     license      = 'MIT License',
     platforms    = 'any',
-    download_url = 'https://github.com/bennyvw/robotframework-dutchbankaccountnumber/tarball/' + VERSION,
     classifiers = [
             "License :: OSI Approved :: MIT License",
             "Operating System :: OS Independent",
